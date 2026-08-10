@@ -1,8 +1,8 @@
 > [!NOTE]
 > **This is a read-only mirror.** The skill is developed in
 > [`rhesis-ai/rhesis`](https://github.com/rhesis-ai/rhesis/tree/main/skills/rhesis) and synced here
-> automatically. Pull requests opened against this repository will be overwritten by the next
-> sync — please open them against the source repo instead.
+> automatically. Pull requests opened here cannot be merged — please open them against the
+> source repo instead.
 
 # Rhesis Agent Skill
 
