@@ -1,0 +1,24 @@
+{
+  "name": "rhesis-ai",
+  "owner": {
+    "name": "Rhesis AI",
+    "url": "https://rhesis.ai"
+  },
+  "metadata": {
+    "description": "Rhesis AI plugin marketplace — AI testing tools and skills"
+  },
+  "plugins": [
+    {
+      "name": "rhesis",
+      "source": "./",
+      "description": "Design, run, and analyze AI test suites on the Rhesis platform",
+      "category": "testing",
+      "tags": [
+        "ai-testing",
+        "mcp",
+        "evaluation",
+        "llm-testing"
+      ]
+    }
+  ]
+}

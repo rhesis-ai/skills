@@ -1,0 +1,21 @@
+{
+  "name": "rhesis",
+  "displayName": "Rhesis",
+  "description": "Design, run, and analyze AI test suites on Rhesis — explore endpoints, build test foundations from requirements, and drive the full workflow via MCP.",
+  "author": {
+    "name": "Rhesis AI",
+    "url": "https://rhesis.ai"
+  },
+  "homepage": "https://rhesis.ai",
+  "repository": "https://github.com/rhesis-ai/skills",
+  "license": "MIT",
+  "keywords": [
+    "ai-testing",
+    "mcp",
+    "evaluation",
+    "llm-testing",
+    "rhesis"
+  ],
+  "category": "developer-tools",
+  "skills": "./skills/"
+}
