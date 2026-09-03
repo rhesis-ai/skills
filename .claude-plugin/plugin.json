@@ -15,5 +15,13 @@
     "llm-testing",
     "rhesis"
   ],
-  "mcpServers": "./skills/rhesis/.mcp.json"
+  "mcpServers": "./skills/rhesis/.mcp.json",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "Rhesis API key",
+      "description": "Generate one at https://app.rhesis.ai/tokens. Leave blank to use the RHESIS_API_KEY environment variable instead.",
+      "sensitive": true
+    }
+  }
 }
