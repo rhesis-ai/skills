@@ -113,7 +113,7 @@ flowchart TB
 
 1. `list_metrics` → resolve by name
 2. `get_metric` (read `evaluation_prompt` and thresholds)
-3. `update_metric` for precise field edits, OR `improve_metric` for NL instructions
+3. `update_metric` for precise field edits, OR `improve_metric` for NL instructions. Framework metrics (backend type `deepeval`, `garak`, `ragas`) are read-only and both tools refuse them; create a custom metric with `create_metric` instead
 4. `get_metric_requirements` to confirm requirement links
 
 ### Undo a requirement–metric link
@@ -137,5 +137,5 @@ flowchart TB
 | TestRun | `list_test_runs` | `get_test_run` | (via `execute_test_set`) | — | `get_insights` with `entity=test_run` (volume, status, who ran what) |
 | TestResult | `list_test_results` | `get_test_result` | — | — | `get_insights` with `entity=test_result` (pass rates, comparisons) |
 | Annotation | `list_annotations` | `get_annotation` | `create_annotation` | `update_annotation` | — |
-| Trace | `list_traces` | `get_trace` | (by instrumentation only) | — | `get_trace_metrics` (cost, tokens, latency), `lookup_span` (row id → trace), `list_trace_providers` (values for the `provider` filter) |
+| Trace | `list_traces` | `get_trace` | (by instrumentation only) | — | `get_trace_metrics` (cost, tokens, latency), `lookup_span` (row id → trace), `list_trace_providers` (values for the `provider` filter), `list_trace_agents` (values for the `agent` filter) |
 | Status | `list_statuses` | — | — | — | Carries the verdict a `create_annotation` records; look the id up, never guess it |
